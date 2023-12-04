@@ -14,3 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+//menu-active
+$(document).ready(function() {
+    const currentPage = window.location.pathname.split('/').pop();
+
+    $('.header-menu a').each(function() {
+        const linkPage = $(this).attr('href').split('/').pop();
+        if (linkPage === currentPage) {
+            $(this).addClass('current-menu-item');
+        }
+    });
+});
