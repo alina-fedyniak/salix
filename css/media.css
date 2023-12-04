@@ -1,0 +1,32 @@
+@media screen and (max-width:1739px){
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+@media screen and (max-width:1199px){
+    .container {
+        padding: 0 25px;
+        max-width: 980px;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .burger-icon{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:992px){
+
+
+}
+
+@media screen and (max-width:767px){
+    .container {
+        padding: 0 20px;
+    }
+
+}

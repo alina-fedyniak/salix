@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    background: none;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #363636;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/*wrapper*/
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF
+}
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+/*header*/
+/* ============burger-menu======== */
+.burger-menu {
+    display: none;
+}
+
+.burger-img-line {
+    position: absolute;
+    top: 427px;
+    width: 100%;
+}
+
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    transition: all 1s ease;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: scroll;
+    z-index: 800;
+    padding-top: 125px;
+}
+.menu-content ul {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding: 0 30px;
+}
+.menu-content li{
+    transition: all 0.3s;
+}
+
+.menu-content li a {
+    color: #363636;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px; /* 400% */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.boot_svg{
+    width: 129px;
+    height: 135px;
+    transition: all .5s ease;
+}
+
+.boorger_btm p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.burger-menu .footer-btn{
+    margin-top: 140px;
+}
+
+.boorger_btm p:hover + .boot_svg{
+    transform: scale(.9);
+    transition: all .5s ease;
+}
+
+.boot_svg:hover{
+    transform: scale(.9);
+    transition: all .5s ease;
+}
+
+.boorger_btm button{
+    display: flex;
+    align-items: center;
+}
+
+.burger-icon {
+    display: none;
+    z-index: 1200;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #363636;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+/* Animation of the burger icon*/
+.burger-icon.active {
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    top: 30px;
+    right: 50%;
+    position: absolute;
+}
+
+.burger-icon.active .bar {
+    background-color: #363636;
+}
+.burger-icon .bar {
+    background-color: #363636;
+}
+
+.burger-icon.active .bar1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.burger-icon.active .bar2 {
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+.burger-icon.active .bar3 {
+    display: none;
+}
+
+.burger-menu.active {
+    right: 0;
+}
+
+.bur-foot {
+    background: #163588;
+}
+
+.booter_soc{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+/*content*/
+.content {
+    flex: 1 0 auto;
+}
+
+
+/*footer*/
+.footer {
+    flex-shrink: 0;
+    min-height: 486px;
+}
+
