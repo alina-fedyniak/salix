@@ -28,6 +28,29 @@
     .mainLinks a {
         font-size: 14px;
     }
+    .mainVariants_title p {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .mainVariants_title {
+        margin: 100px 0 70px 0;
+    }
+    .mainVariants_list-item a p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .mainVariants_info {
+        margin: 85px 0 100px 0;
+    }
+    .mainVariants_info div:first-child>div {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .mainVariants_info div:first-child>p {
+        font-size: 16px;
+        margin-bottom: 12px;
+        margin-right: 20px;
+    }
 
 }
 
@@ -107,6 +130,47 @@
     .mainLinks-mobile {
         display: flex;
     }
+    .mainVariants_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px
+    }
+    .mainVariants_title p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .mainVariants_title {
+        margin: 70px 0 45px 0;
+    }
+    .mainVariants_list-item a p {
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 100%;
+    }
+    .mainVariants_info {
+        margin: 65px 0 80px 0;
+        flex-direction: column-reverse;
+    }
+    .mainVariants_info div:last-child>img {
+        width: 100%;
+    }
+    .mainVariants_info div:first-child>div {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .mainVariants_info div:first-child>p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        max-width: 100%;
+    }
+    a.goToCatalog {
+        width: 300px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    a.goToCatalog span {
+        font-size: 15px;
+    }
 
 }
 
@@ -185,6 +249,34 @@
         flex-direction: column;
         align-items: baseline;
         color: white;
+    }
+    .mainVariants_title p {
+        line-height: 30px;
+    }
+    .mainVariants_title {
+        margin: 80px 0 50px 0;
+    }
+    .mainVariants_list-item a p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .mainVariants_list {
+        gap: 20px;
+    }
+    .mainVariants_list-item a img {
+        margin-right: 5px;
+    }
+    .mainVariants_list-item a>img {
+        width: 25px;
+    }
+    .mainVariants_info {
+        margin: 50px 0 80px 0;
+    }
+    .mainVariants_info div:first-child>div {
+        font-size: 20px;
+    }
+    .mainVariants_info div:first-child>p {
+        line-height: 20px;
     }
 
 }
