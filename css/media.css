@@ -51,6 +51,31 @@
         margin-bottom: 12px;
         margin-right: 20px;
     }
+    .cardImg .sale {
+        font-size: 14px;
+    }
+    .cardImg .hit {
+        font-size: 14px;
+    }
+    .cardContent p {
+        font-size: 17px;
+    }
+    .cardStatus {
+        font-size: 12px;
+    }
+    .cardStatus>div>img {
+        margin-right: 5px;
+    }
+    .price span {
+        font-size: 25px;
+    }
+    .toOrder a span {
+        font-size: 18px;
+    }
+    .products_title {
+        font-size: 35px;
+        margin-bottom: 60px;
+    }
 
 }
 
@@ -171,6 +196,68 @@
     a.goToCatalog span {
         font-size: 15px;
     }
+    .cardImg .sale {
+        font-size: 15px;
+        width: 100px;
+        height: 35px;
+    }
+    .cardImg .hit {
+        font-size: 15px;
+        left: 10px;
+        width: 70px;
+        height: 35px;
+    }
+    .cardContent p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .cardStatus {
+        font-size: 10px;
+    }
+    .cardStatus {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    .cardContent .price:hover {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    .cardContent {
+        padding: 20px 10px 20px 10px;
+    }
+    .toOrder {
+        height: 60px;
+    }
+    .toOrder a span {
+        font-size: 16px;
+    }
+    .toOrder a img {
+        margin-left: 7px;
+        width: 11px;
+    }
+    .products_title {
+        font-size: 27px;
+        margin-bottom: 40px;
+    }
+    .bur-foot .headerTop_address {
+        display: flex;
+        margin: 80px 0 30px 0;
+    }
+    .bur-foot .headerTop_numbers {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .bur-foot .headerTop_btn {
+        display: flex;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    .bur-foot>.headerTop_info {
+        flex-direction: column;
+        align-items: baseline;
+        color: white;
+    }
 
 }
 
@@ -232,24 +319,6 @@
         width: 100%;
         justify-content: flex-start;
     }
-    .bur-foot .headerTop_address {
-        display: flex;
-        margin: 80px 0 30px 0;
-    }
-    .bur-foot .headerTop_numbers {
-        display: block;
-        margin-bottom: 50px;
-    }
-    .bur-foot .headerTop_btn {
-        display: flex;
-        margin-bottom: 30px;
-        margin-left: 0;
-    }
-    .bur-foot>.headerTop_info {
-        flex-direction: column;
-        align-items: baseline;
-        color: white;
-    }
     .mainVariants_title p {
         line-height: 30px;
     }
@@ -277,6 +346,16 @@
     }
     .mainVariants_info div:first-child>p {
         line-height: 20px;
+    }
+    .products_title {
+        font-size: 27px;
+        margin-bottom: 31px;
+    }
+    .cardStatus {
+        font-size: 15px;
+    }
+    .swiper-slide img {
+        height: 243px;
     }
 
 }
