@@ -26,3 +26,31 @@ $(document).ready(function() {
         }
     });
 });
+
+//mySwiper
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 15,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+    },navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+        },
+        719: {
+            slidesPerView: 3,
+        },
+        340: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+        },
+
+    },
+
+});
