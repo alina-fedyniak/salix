@@ -1074,7 +1074,8 @@ a.goToCatalog img {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+    padding-bottom: 50px;
 }
 
 .footer_wrap {
@@ -1105,5 +1106,35 @@ a.goToCatalog img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer_wrap-logo .booter_soc {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer_block h4 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.footer_block {
+    max-width: 390px;
+}
+
+.footer_block a {
+    color: #363636;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer_block div {
+    margin-bottom: 8px;
 }
 
