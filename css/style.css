@@ -717,6 +717,7 @@ a.goToCatalog img {
 
 .cardContent {
     padding: 30px 10px 30px 10px;
+    transition: .3s ease;
 }
 
 .cardContent>a>p {
@@ -763,6 +764,7 @@ a.goToCatalog img {
 }
 .price {
     position: initial;
+    transition: .3s ease;
 }
 
 .cardContent .price:hover {
@@ -789,10 +791,14 @@ a.goToCatalog img {
     color: white;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
-.cardContent:hover>.toOrder {
+.cardContent .toOrder {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.cardContent:hover .toOrder  {
     display: flex;
 }
 

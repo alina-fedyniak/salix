@@ -146,6 +146,16 @@
     .footer_portals img {
         width: 100%;
     }
+    .table-metalOptions tr th {
+         padding: 0;
+    }
+    .table-metalSchemes tr th {
+        padding: 0;
+    }
+    .metalSchemes_table-imgs {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -380,6 +390,8 @@
     }
     .metalSchemes button {
         width: 100%;
+        font-size: 15px;
+        padding: 0 20px;
     }
     .table-metalThickness-info {
         display: flex;
@@ -429,6 +441,43 @@
     }
     .metalInfo_block {
         margin-bottom: 38px;
+    }
+    .metalSchemes_table-imgs {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .tableWrap {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table-metalSchemes tr:not(:first-child) td:first-child {
+        min-width: 97px;
+    }
+    .table-metalSchemes tr:not(:first-child) td:not(:first-child) {
+        min-width: 168px;
+    }
+    .metalSchemes_table-imgs img {
+        margin-right: 5px;
+    }
+    .metalSchemes form {
+        margin: 0 35px;
+    }
+    .table-metalOptions th:not(:last-child), .table-metalOptions tr:nth-child(2) td, .table-metalOptions tr:nth-child(3) td, .table-metalOptions tr:last-child td {
+        border-right: 1px solid #D1D1D1;
+        min-width: 239px;
+    }
+    .metalOptions_title.metal_title {
+        margin-bottom: 50px;
+        margin-top: 80px;
+    }
+    .metalSchemes_title.metal_title {
+        margin-bottom: 50px;
+    }
+    .contactForm {
+        background: #2967EC;
+        margin-top: 80px;
     }
 
 
@@ -530,19 +579,26 @@
         height: 243px;
     }
     .swiper-btn .swiper-button-next, .swiper-rtl .swiper-button-prev {
-        top: 717px;
+        top: 650px;
         right: 32%;
     }
 
     .swiper-btn .swiper-button-prev, .swiper-rtl .swiper-button-next {
         left: 32%;
-        top: 717px;
+        top: 650px;
     }
     .products_title {
         font-size: 25px;
     }
     .metal_title {
         margin-top: 80px;
+        font-size: 25px;
+        line-height: 30px;
+        width: 371px;
+    }
+    .products .swiper {
+        padding-top: 20px;
+        padding-bottom: 110px;
     }
 
 }
