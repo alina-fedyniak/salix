@@ -868,6 +868,14 @@ a.goToCatalog img {
     text-align: center;
 }
 
+.metalOptions_title.metal_title {
+    margin-bottom: 80px;
+}
+
+.metalSchemes_title.metal_title {
+    margin-bottom: 75px;
+}
+
 .metal_title h3 {
     color: #363636;
 }
@@ -959,11 +967,233 @@ table {
     width: 97px;
 }
 
+.table-metalThickness-info {
+    display: flex;
+}
+
+.table-metalThickness-info .block {
+    border-radius: 20px;
+    border: 1px solid #D1D1D1;
+    padding: 30px;
+    width: 50%;
+}
+
+.table-metalThickness-info .block {
+    margin-top: 20px;
+}
+
+.table-metalThickness-info .block>div {
+    display: flex;
+    align-items: center;
+}
+
+.table-metalThickness-info .block>div img {
+    margin-right: 10px;
+}
+
+.table-metalThickness-info .block:first-child {
+    margin-right: 20px;
+}
+
+.table-metalThickness-info .block:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.table-metalThickness-info .block span, .table-metalThickness-info .block p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.metalInfo_img {
+    position: relative;
+}
+
+.metalInfo_img img:first-child {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 170px;
+}
+
+.metalInfo_img img:not(:first-child) {
+    position: absolute;
+}
+
+.metalInfo_img img:nth-child(2) {
+    top: 172px;
+    left: 641px;
+}
+
+.metalInfo_img img:nth-child(3) {
+    top: 322px;
+    left: 969px;
+}
+
+.metalInfo_img img:last-child {
+    top: 345px;
+    left: 561px;
+}
+
+.metalInfo_block {
+    border-radius: 20px;
+    border: 1px solid #D1D1D1;
+    width: 420px;
+    padding: 30px;
+    position: relative;
+}
+
+.metalInfo_block p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.metalInfo_icon {
+    width: 28px;
+    height: 28px;
+    background: #2967EC;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgb(80, 136, 255);
+    transform: scale(1);
+    animation: pulse 1.5s infinite;
+    position: absolute;
+}
+
+.metalInfo_icon.icon-1{
+    top: 66px;
+    right: -13px;
+}
+
+.metalInfo_icon.icon-2{
+    top: 26px;
+    right: -13px;
+}
+
+.metalInfo_icon.icon-3{
+    top: 46px;
+    left: -12px;
+}
+
+.metalInfo {
+    position: relative;
+}
+
+.metalInfo_block.block-1 {
+    bottom: 327px;
+    left: 213px;
+    position: absolute;
+}
+
+.metalInfo_block.block-2 {
+    bottom: 195px;
+    left: 137px;
+    position: absolute;
+}
+
+.metalInfo_block.block-3 {
+    bottom: 198px;
+    left: 1105px;
+    position: absolute;
+}
+
+/*table-metalOptions*/
+.table-metalOptions tr {
+    border: 1px solid #D1D1D1;
+    text-align: center;
+}
+
+.table-metalOptions tr th {
+    background: #D1D1D1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 125% */
+    text-transform: uppercase;
+    padding: 12px 62px;
+    vertical-align: middle;
+}
+
+.table-metalOptions tr th span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: lowercase;
+}
+
+.table-metalOptions tr td {
+    padding: 2px;
+}
+
+.table-metalOptions th:not(:last-child), .table-metalOptions tr:nth-child(2) td, .table-metalOptions tr:nth-child(3) td, .table-metalOptions tr:last-child td {
+    border-right: 1px solid #D1D1D1;
+}
+
+.table-metalOptions tr th:first-child {
+    border-top-left-radius: 30px;
+}
+
+.table-metalOptions tr th:last-child {
+    border-top-right-radius: 30px;
+}
+
+.table-metalOptions tr:first-child {
+    border: none;
+}
+
+/*table-metalSchemes*/
+.table-metalSchemes tr {
+    border: 1px solid #D1D1D1;
+    text-align: center;
+}
+
+.table-metalSchemes tr th {
+    background: #D1D1D1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 125% */
+    text-transform: uppercase;
+    padding: 12px 62px;
+    vertical-align: middle;
+}
+
+.table-metalSchemes tr td {
+    padding: 2px;
+}
+
+.table-metalSchemes th:not(:last-child),
+.table-metalSchemes tr:nth-child(2) td,
+.table-metalSchemes tr:nth-child(3) td,
+.table-metalSchemes tr:nth-child(4) td,
+.table-metalSchemes tr:nth-child(5) td,
+.table-metalSchemes tr:nth-child(6) td,
+.table-metalSchemes tr:nth-child(7) td,
+.table-metalSchemes tr:nth-child(8) td,
+.table-metalSchemes tr:last-child td {
+    border-right: 1px solid #D1D1D1;
+}
+
+.table-metalSchemes tr th:first-child {
+    border-top-left-radius: 30px;
+}
+
+.table-metalSchemes tr th:last-child {
+    border-top-right-radius: 30px;
+}
+
+.table-metalSchemes tr:first-child {
+    border: none;
+}
+
 .metalSchemes_table-imgs {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .metalSchemes button {
