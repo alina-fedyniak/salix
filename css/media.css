@@ -119,6 +119,33 @@
     .metalInfo_block {
         max-width: 354px;
     }
+    .contactForm_wrap>div:last-child {
+        max-width: 450px;
+        padding-top: 60px;
+        padding-bottom: 55px;
+        margin-left: 100px;
+        width: 50%;
+    }
+    .contactForm_title h3 {
+        font-size: 35px;
+    }
+    .contactForm_title p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .footer_block h4 {
+        font-size: 20px;
+    }
+    .footer_block a {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .footer_wrap-logo {
+        margin-right: 30px;
+    }
+    .footer_portals img {
+        width: 100%;
+    }
 
 }
 
@@ -306,6 +333,104 @@
     .metal_title {
         font-size: 27px;
     }
+    .footer_wrap-block {
+        flex-direction: column;
+    }
+    .footer_wrap {
+        flex-direction: column-reverse;
+    }
+    .foot-back {
+        position: absolute;
+        right: 0;
+    }
+    .footer_wrap-logo {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    .footer_block {
+        margin-right: 0;
+    }
+    .footer_block:nth-child(2) h4, .footer_block:nth-child(3) h4  {
+        margin-top: 30px;
+    }
+    .footer_wrap-logo .booter_soc {
+        justify-content: flex-start;
+    }
+    .booter_soc {
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .footer_portals div:not(:last-child) {
+        margin-right: 20px;
+    }
+    .contactForm_wrap {
+        flex-direction: column-reverse;
+    }
+    .contactForm_wrap>div:first-child {
+        width: 100%;
+    }
+    .contactForm_wrap>div:last-child {
+        max-width: 100%;
+        padding: 60px 20px 55px 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .contactForm_title {
+        margin: 0 auto;
+    }
+    .metalSchemes button {
+        width: 100%;
+    }
+    .table-metalThickness-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .table-metalThickness-info .block {
+        width: 100%;
+    }
+    .metalInfo_block.block-1 {
+        position: initial;
+    }
+    .metalInfo_block.block-2 {
+        position: initial;
+    }
+    .metalInfo_block.block-3 {
+        position: initial;
+    }
+    .metalInfo_block {
+        max-width: 100%;
+        width: 100%;
+    }
+    .metalInfo_img img:first-child {
+        padding-top: 70px;
+        width: 100%;
+        max-width: 300px;
+    }
+    .metalInfo_img img:nth-child(2) {
+        display: none;
+    }
+    .metalInfo_img img:nth-child(3) {
+        display: none;
+    }
+    .metalInfo_img img:last-child {
+        display: none;
+    }
+    .metalInfo_icon.icon-3 {
+        top: 298px;
+        left: -6px;
+    }
+    .metalInfo_icon.icon-2 {
+        top: 448px;
+        left: -6px;
+    }
+    .metalInfo_icon.icon-1 {
+        top: 557px;
+        left: -6px;
+    }
+    .metalInfo_block {
+        margin-bottom: 38px;
+    }
+
 
 }
 
@@ -415,6 +540,9 @@
     }
     .products_title {
         font-size: 25px;
+    }
+    .metal_title {
+        margin-top: 80px;
     }
 
 }

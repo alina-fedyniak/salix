@@ -1410,12 +1410,25 @@ table {
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
-    line-height: 80px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .footer_block {
     max-width: 390px;
+}
+
+.footer_wrap-contacts div span {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.footer_wrap-block {
+    display: flex;
+}
+
+.footer_block {
+    margin-right: 30px;
 }
 
 .footer_block a {
