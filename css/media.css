@@ -57,7 +57,7 @@
     .cardImg .hit {
         font-size: 14px;
     }
-    .cardContent p {
+    .cardContent>a>p {
         font-size: 17px;
     }
     .cardStatus {
@@ -74,7 +74,50 @@
     }
     .products_title {
         font-size: 35px;
-        margin-bottom: 60px;
+    }
+    .swiper-btn .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 995px;
+    }
+    .metal_title {
+        font-size: 35px;
+    }
+    .table-metalThickness-info .block {
+        padding: 25px;
+    }
+    .table-metalThickness-info .block span, .table-metalThickness-info .block p {
+        font-size: 18px;
+    }
+    .metalInfo_block {
+        padding: 25px;
+    }
+    .metalInfo_img img:nth-child(2) {
+        top: 179px;
+        left: 454px;
+        width: 141px;
+    }
+    .metalInfo_block.block-1 {
+        bottom: 309px;
+        left: 102px;
+    }
+    .metalInfo_img img:last-child {
+        top: 381px;
+        left: 290px;
+        width: 124px;
+    }
+    .metalInfo_img img:nth-child(3) {
+        top: 310px;
+        left: 695px;
+    }
+    .metalInfo_block.block-3 {
+        bottom: 200px;
+        left: 831px;
+    }
+    .metalInfo_block.block-2 {
+        bottom: 169px;
+        left: -66px;
+    }
+    .metalInfo_block {
+        max-width: 354px;
     }
 
 }
@@ -207,7 +250,7 @@
         width: 70px;
         height: 35px;
     }
-    .cardContent p {
+    .cardContent>a>p {
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 20px;
@@ -238,7 +281,6 @@
     }
     .products_title {
         font-size: 27px;
-        margin-bottom: 40px;
     }
     .bur-foot .headerTop_address {
         display: flex;
@@ -257,6 +299,12 @@
         flex-direction: column;
         align-items: baseline;
         color: white;
+    }
+    .swiper-btn .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 570px;
+    }
+    .metal_title {
+        font-size: 27px;
     }
 
 }
@@ -349,13 +397,24 @@
     }
     .products_title {
         font-size: 27px;
-        margin-bottom: 31px;
     }
     .cardStatus {
         font-size: 15px;
     }
     .swiper-slide img {
         height: 243px;
+    }
+    .swiper-btn .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        top: 717px;
+        right: 32%;
+    }
+
+    .swiper-btn .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 32%;
+        top: 717px;
+    }
+    .products_title {
+        font-size: 25px;
     }
 
 }

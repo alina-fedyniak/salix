@@ -663,7 +663,7 @@ a.goToCatalog img {
     line-height: 45px; /* 112.5% */
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .products_title h3 {
@@ -719,7 +719,8 @@ a.goToCatalog img {
     padding: 30px 10px 30px 10px;
 }
 
-.cardContent p {
+.cardContent>a>p {
+    color: #363636;
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -814,7 +815,7 @@ a.goToCatalog img {
 }
 
 /*swiper*/
-.swiper {
+.products .swiper {
     width: 100%;
     height: 100%;
     position: relative;
@@ -833,7 +834,7 @@ a.goToCatalog img {
     border: 1px solid #E8E8E8;
 }
 
-.swiper-slide .cardImg>img {
+.swiper-slide .cardImg>a>img {
     display: block;
     width: 100%;
     height: 100%;
@@ -841,20 +842,31 @@ a.goToCatalog img {
     position: relative;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    z-index: 100;
-    cursor: pointer;
+.swiper-btn .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    background: #2967EC;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 25px;
+    left: 1533px;
 }
 
-.swiper-button-prev {
-    cursor: pointer;
+.swiper-btn .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    background: #2967EC;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 25px;
 }
 
-.swiper-button-next {
-    cursor: pointer;
+.swiper-btn .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 28px;
+}
+
+.swiper-btn .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-size: 28px;
 }
 
 .metal_title {
@@ -884,43 +896,22 @@ a.goToCatalog img {
     color: #2967EC;
 }
 
-/*.swiper-button-next {*/
-/*    position: absolute;*/
-/*    display: block;*/
-/*    content: "";*/
-/*    top: 30px;*/
-/*    right: 0px;*/
-/*    width: 60px;*/
-/*    height: 60px;*/
-/*    background-image: url(../images/svg/prev-icon.svg);*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
-/*.swiper-button-next:after,*/
-/*.swiper-rtl .swiper-button-prev:after {*/
-/*    content: "";*/
-/*}*/
-
-/*.swiper-button-prev {*/
-/*    position: absolute;*/
-/*    display: block;*/
-/*    content: "";*/
-/*    top: 30px;*/
-/*    left: 1310px;*/
-/*    width: 60px;*/
-/*    height: 60px;*/
-/*    background-image: url(../images/svg/next-icon.svg);*/
-/*    rotate: 180deg;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
-/*.swiper-button-prev:after,*/
-/*.swiper-rtl .swiper-button-next:after {*/
-/*    content: "";*/
-/*}*/
-
 table {
     width: 100%;
+}
+
+th, td {
+    border: 1px solid #bfc3c8;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 30px;
+}
+
+.table-metalThickness tr:first-child th {
+    border: none;
 }
 
 .table-metalThickness tr:not(:first-child) {
@@ -963,8 +954,9 @@ table {
 }
 
 .table-metalThickness tr:not(:nth-child(2)) td:first-child {
-   background: #2967EC;
+    background: #2967EC;
     width: 97px;
+    color: #FFFFFF;
 }
 
 .table-metalThickness-info {
@@ -1135,6 +1127,14 @@ table {
     border-top-left-radius: 30px;
 }
 
+.table-metalOptions tr:last-child td:first-child {
+    border-bottom-left-radius: 30px;
+}
+
+.table-metalOptions tr:last-child td:last-child {
+    border-bottom-right-radius: 30px;
+}
+
 .table-metalOptions tr th:last-child {
     border-top-right-radius: 30px;
 }
@@ -1164,6 +1164,11 @@ table {
     padding: 2px;
 }
 
+.table-metalSchemes tr td:first-child {
+    background: #2967EC;
+    color: #FFFFFF;
+}
+
 .table-metalSchemes th:not(:last-child),
 .table-metalSchemes tr:nth-child(2) td,
 .table-metalSchemes tr:nth-child(3) td,
@@ -1184,9 +1189,18 @@ table {
     border-top-right-radius: 30px;
 }
 
+.table-metalSchemes tr:last-child td:first-child {
+    border-bottom-left-radius: 30px;
+}
+
+.table-metalSchemes tr:last-child td:last-child {
+    border-bottom-right-radius: 30px;
+}
+
 .table-metalSchemes tr:first-child {
     border: none;
 }
+
 
 .metalSchemes_table-imgs {
     display: flex;
