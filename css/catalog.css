@@ -1,0 +1,84 @@
+.catalog_img {
+    display: block;
+    background: url("../images/img/catalog-banner-img.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 288px;
+    height: 100vh;
+    position: relative;
+}
+
+/* breadcrumb */
+ul.breadcrumb {
+    padding: 40px 0 50px 0;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #FFFFFF;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ul.breadcrumb li a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.catalog form>button {
+    width: 260px;
+    height: 80px;
+    border-radius: 5px;
+    background: #2967EC;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog form>button img{
+    margin-left: 10px;
+}
+
+.catalog form {
+    display: flex;
+}
+
+.catalog form>label {
+    width: 100%;
+    margin-right: 10px;
+}
+
+#search-product {
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    width: 100%;
+    height: 80px;
+    color: #D1D1D1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0 0 0 40px;
+}
