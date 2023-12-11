@@ -97,4 +97,42 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     initFilterAccordions();
 
+    //initSortCards
+    const initSortCards = () => {
+        document.getElementById('sortSelect').addEventListener('change', function () {
+            const selectedValue = this.value;
+            const cardContainer = document.querySelector('.cardsBlock_cards');
+            const cards = Array.from(document.querySelectorAll('.card'));
+
+            if (selectedValue === 'popularity') {
+                cards.sort(function(a, b) {
+                    const popularityA = parseInt(a.getAttribute('data-popularity'));
+                    const popularityB = parseInt(b.getAttribute('data-popularity'));
+                    return popularityB - popularityA;
+                });
+            } else if (selectedValue === 'price-high') {
+                cards.sort(function (a, b) {
+                    const priceA = parseFloat(a.textContent.match(/\d+/)[0]);
+                    const priceB = parseFloat(b.textContent.match(/\d+/)[0]);
+                    return priceB - priceA;
+                });
+            } else if (selectedValue === 'price-low') {
+                cards.sort(function (a, b) {
+                    const priceA = parseFloat(a.textContent.match(/\d+/)[0]);
+                    const priceB = parseFloat(b.textContent.match(/\d+/)[0]);
+                    return priceA - priceB;
+                });
+            }
+
+            cards.forEach(function (card) {
+                cardContainer.removeChild(card);
+            });
+
+            cards.forEach(function (card) {
+                cardContainer.appendChild(card);
+            });
+        });
+    };
+    initSortCards();
+
 });

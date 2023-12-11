@@ -123,7 +123,9 @@ ul.breadcrumb li a:hover {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .accordion-content label {
@@ -131,6 +133,10 @@ ul.breadcrumb li a:hover {
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+}
+
+.accordion-content div:first-child {
+    margin-top: 20px;
 }
 
 .accordion-content label span {
@@ -145,7 +151,68 @@ ul.breadcrumb li a:hover {
     border: 1px solid #D1D1D1;
     padding: 30px 15px;
     margin-bottom: 15px;
+    min-width: 336px;
+    width: 100%;
 }
 #intermittent1, #intermittent2, #intermittent3, #intermittent4 {
     margin-left: 25px;
+}
+
+.cardsWrap .filter {
+    margin-right: 30px;
+}
+
+.catalogText {
+    margin: 130px 0 130px 0;
+}
+
+.catalogText p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.catalogText p:last-child {
+    margin-top: 20px;
+}
+
+.cardsWrap_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardsBlock_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: fit-content;
+}
+
+.cardsBlock_sort {
+    margin-bottom: 50px;
+}
+
+.cardsBlock_sort>form>label {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.cardsBlock_sort>form {
+    display: flex;
+    align-items: center;
+}
+
+#sortSelect {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#sortSelect option {
+    font-size: 20px;
 }
