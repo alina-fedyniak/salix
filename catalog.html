@@ -172,36 +172,193 @@
                             </div>
                         </div>
                     </section>
-                    <section>
-                        <div class="filter">
-                            <div class="group filterDrop">
-                                <form action="">
-                                    <div class="group_title">Підгрупи SALIX
-                                        <div class="arrow-icon"></div>
-                                    </div>
-                                    <div class="accordion-content">
-                                        <div>
-                                            <input type="checkbox" id="strut" name="strut" value="strut">
-                                            <label for="strut">strut<span>(універсальні монтажні профілі)</span> </label>
+                    <section class="cardsWrap">
+                        <div class="container">
+                            <div class="filter">
+                                <div class="group filterDrop">
+                                    <form action="">
+                                        <div class="group_title">Підгрупи SALIX
+                                            <div class="arrow-icon"></div>
                                         </div>
-                                        <div>
-                                            <input type="checkbox" id="traverse" name="traverse" value="traverse">
-                                            <label for="traverse">traverse <span>(монтажна траверса)</span></label>
+                                        <div class="accordion-content">
+                                            <div>
+                                                <input type="checkbox" id="strut" name="strut" value="strut">
+                                                <label for="strut">strut<span> (універсальні монтажні профілі)</span> </label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="traverse" name="traverse" value="traverse">
+                                                <label for="traverse">traverse<span> (монтажна траверса)</span></label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="strix" name="strix" value="strix">
+                                                <label for="strix">strix<span> (напрямні для підвісних елементів)</span></label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="L-type" name="L-type" value="L-type">
+                                                <label for="L-type">L-type<span> (кутики монтажні универсальні)</span></label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="building" name="building" value="building">
+                                                <label for="building">building<span> (профілі для каркасних будівель та споруд (ЛСТК))</span></label>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input type="checkbox" id="strix" name="strix" value="strix">
-                                            <label for="strix">strix<span>(напрямні для підвісних елементів)</span></label>
+                                    </form>
+                                </div>
+                                <div class="group filterDrop wallThickness">
+                                    <form action="">
+                                        <div class="group_title">Товщина стінки
+                                            <div class="arrow-icon"></div>
                                         </div>
-                                        <div>
-                                            <input type="checkbox" id="L-type" name="L-type" value="L-type">
-                                            <label for="L-type">L-type <span>(кутики монтажні универсальні)</span></label>
+                                        <div class="accordion-content">
+                                            <div>
+                                                <input type="checkbox" id="wallThickness-1" name="wallThickness-1" value="wallThickness-1">
+                                                <label for="wallThickness-1">1,0 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="wallThickness-2" name="wallThickness-2" value="wallThickness-2">
+                                                <label for="wallThickness-2">1,2 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="wallThickness-3" name="wallThickness-3" value="wallThickness-3">
+                                                <label for="wallThickness-3">1,5 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="wallThickness-4" name="wallThickness-4" value="wallThickness-4">
+                                                <label for="wallThickness-4">1,75 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="wallThickness-5" name="wallThickness-5" value="wallThickness-5">
+                                                <label for="wallThickness-5">2,0 мм</label>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <input type="checkbox" id="building" name="building" value="building">
-                                            <label for="building">building <span>(профілі для каркасних будівель та споруд (ЛСТК))</span></label>
+                                    </form>
+                                </div>
+                                <div class="group filterDrop perforations">
+                                    <form action="">
+                                        <div class="group_title">Варіант перфорації
+                                            <div class="arrow-icon"></div>
                                         </div>
-                                    </div>
-                                </form>
+                                        <div class="accordion-content">
+                                            <div>
+                                                <div>
+                                                    <input type="checkbox" id="intermittent" name="intermittent" value="intermittent">
+                                                    <label for="intermittent">Періодична перфорація</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="intermittent1" name="intermittent1" value="intermittent1">
+                                                    <label for="intermittent1">strut (ПП.001, ПП.002, ПП.003, ПП.004, ПП.007, ПП.008, ПП.009, ПП.010)</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="intermittent2" name="intermittent2" value="intermittent2">
+                                                    <label for="intermittent2">traverse (ПП.006)</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="intermittent3" name="intermittent3" value="intermittent3">
+                                                    <label for="intermittent3">L-type (ПП.030)</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="intermittent4" name="intermittent4" value="intermittent4">
+                                                    <label for="intermittent4">О-mega(ПП.020)</label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="coordinate" name="coordinate" value="coordinate">
+                                                <label for="coordinate">Координатна перфорація</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="group filterDrop typeProfile">
+                                    <form action="">
+                                        <div class="group_title">Тип профілю
+                                            <div class="arrow-icon"></div>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div>
+                                                <input type="checkbox" id="typeProfile-1" name="typeProfile-1" value="typeProfile-1">
+                                                <label for="typeProfile-1">С-ОБРАЗНИЙ</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="typeProfile-2" name="typeProfile-2" value="typeProfile-2">
+                                                <label for="typeProfile-2">L-ОБРАЗНИЙ</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="typeProfile-3" name="typeProfile-3" value="typeProfile-3">
+                                                <label for="typeProfile-3">U-ОБРАЗНИЙ</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="typeProfile-4" name="typeProfile-4" value="typeProfile-4">
+                                                <label for="typeProfile-4">ПЛОСКИЙ</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="typeProfile-5" name="typeProfile-5" value="typeProfile-5">
+                                                <label for="typeProfile-5">ПЛОСКИЙ</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="group filterDrop sizeProfile">
+                                    <form action="">
+                                        <div class="group_title">Розмір
+                                            <div class="arrow-icon"></div>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-1" name="sizeProfile-1" value="sizeProfile-1">
+                                                <label for="sizeProfile-1">100х100 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-2" name="sizeProfile-2" value="sizeProfile-2">
+                                                <label for="sizeProfile-2">100х120 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-3" name="sizeProfile-3" value="sizeProfile-3">
+                                                <label for="sizeProfile-3">24х10 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-4" name="sizeProfile-4" value="sizeProfile-4">
+                                                <label for="sizeProfile-4">41х51 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-5" name="sizeProfile-5" value="sizeProfile-5">
+                                                <label for="sizeProfile-5">80х80 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-6" name="sizeProfile-6" value="sizeProfile-6">
+                                                <label for="sizeProfile-6">27х18 мм</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="sizeProfile-7" name="sizeProfile-7" value="sizeProfile-7">
+                                                <label for="sizeProfile-7">30х15 мм</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="group filterDrop series">
+                                    <form action="">
+                                        <div class="group_title">Серія
+                                            <div class="arrow-icon"></div>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <div>
+                                                <input type="checkbox" id="series-1" name="series-1" value="series-1">
+                                                <label for="series-1">BIS Rapid Rail</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="series-2" name="series-2" value="series-2">
+                                                <label for="series-2">BIS Rapid Strut</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="series-3" name="series-3" value="series-3">
+                                                <label for="series-3">Maxx</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="series-4" name="series-4" value="series-4">
+                                                <label for="series-4">T18</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -298,6 +455,8 @@
             </div>
         </div>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

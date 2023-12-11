@@ -82,3 +82,70 @@ ul.breadcrumb li a:hover {
     font-weight: 500;
     padding: 0 0 0 40px;
 }
+
+.cardsWrap {
+    margin-top: 50px;
+}
+
+/*filterDrop*/
+.filterDrop .accordion-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.filterDrop.active .accordion-content {
+    display: block;
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.filterDrop .arrow-icon {
+    width: 12px;
+    height: 12px;
+    border-top: 1px solid #242425;
+    border-left: 1px solid #242425;
+    transform: rotate(225deg);
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease-out;
+}
+
+.filterDrop.active .arrow-icon {
+    border-top: 1px solid #242425;
+    border-left: 1px solid #242425;
+    transform: rotate(45deg);
+}
+
+.group_title {
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.accordion-content label {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.accordion-content label span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.group form {
+    border-radius: 5px;
+    border: 1px solid #D1D1D1;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+}
+#intermittent1, #intermittent2, #intermittent3, #intermittent4 {
+    margin-left: 25px;
+}
