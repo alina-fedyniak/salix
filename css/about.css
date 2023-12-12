@@ -1,0 +1,114 @@
+.blog-img {
+    display: block;
+    background: url("../images/img/blog-banner-img.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 800px;
+    height: 100vh;
+    position: relative;
+}
+
+.blog-title {
+    color: #FFF;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    max-width: 1094px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 116px;
+}
+
+.blog-title div span {
+    color: #2967EC;
+}
+
+.weWork_block {
+    display: flex;
+    align-items: center;
+    margin: 130px 0 80px 0;
+}
+
+.weWork_info h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    max-width: 568px;
+}
+
+.weWork_info div img {
+    width: 23px;
+    height: 23px;
+    background: #2967EC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.weMake {
+    background: #F7F7F7;
+}
+
+.weWork_info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.weWork_info div span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.weMake_block h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding: 130px 0 80px 0;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.weMake_block h3 span {
+    color: #2967EC;
+}
+
+.weMake_info>div>h4 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.weMake_info {
+    padding-bottom: 130px;
+}
+
+.weMake_info>div>p {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 370px;
+}
+
+.weMake_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weMake_info>div:not(:last-child) {
+    margin-right: 142px;
+}
