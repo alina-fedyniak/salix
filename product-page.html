@@ -164,6 +164,116 @@
                             </div>
                         </div>
                     </section>
+                    <section class="container oneCard">
+                        <div class="oneCard_block">
+                            <div>
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-1.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-1.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-31.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-32.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-31.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-32.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next swiper-button-white"></div>
+                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                </div>
+                                <div class="swiper-container gallery-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-1.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-31.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-32.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-32.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-32.png" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/sliders/slide-32.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="cardContent">
+                                    <a href="./product-page.html">
+                                        <p>Профіль монтажний оцинкований перфорований SALIX 30x20, товщина 1.5мм</p>
+                                    </a>
+                                    <div class="cardStatus">
+                                        <div>
+                                            <img src="./images/svg/ellipse-red-small-icon.svg" alt="img">
+                                            <span class="status-item">під замовлення</span>
+                                            <span>Оптом і в роздріб</span>
+                                        </div>
+                                    </div>
+                                    <div class="price price-desktop">
+                                        <span>62</span>
+                                        <span>₴/м</span>
+                                    </div>
+                                    <div class="changeVariants">
+                                        <div>Цинкове покриття:</div>
+                                        <div>
+                                            <span>140</span>
+                                            <span>275</span>
+                                        </div>
+                                    </div>
+                                    <button class="toOrder-2">
+                                        <a href="#">
+                                            <span>Замовити</span>
+                                            <img src="images/svg/arrow-left-top.svg" alt="img">
+                                        </a>
+                                    </button>
+                                    <div class="counter-product">
+                                        <span>-</span>
+                                        <span>0</span>
+                                        <span>+</span>
+                                    </div>
+                                    <div class="info-order">
+                                        <div>
+                                            <a href="#">
+                                                <img src="images/svg/checkmark_ok-icon.svg" alt="img">
+                                                <span>Умови оплати та доставки</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="images/svg/checkmark_ok-icon.svg" alt="img">
+                                                <span>Графік роботи</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="images/svg/checkmark_ok-icon.svg" alt="img">
+                                                <span>Адреса та контакти</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="container metalThickness">
                         <div>
                             <div class="metalThickness_title metal_title">
@@ -919,6 +1029,28 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+        <script>
+            const galleryThumbs = new Swiper('.gallery-thumbs', {
+                spaceBetween: 15,
+                slidesPerView: 3,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            const galleryTop = new Swiper('.gallery-top', {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                    swiper: galleryThumbs
+                }
+            });
+        </script>
         <script src="./js/main.js"></script>
     </body>
 </html>

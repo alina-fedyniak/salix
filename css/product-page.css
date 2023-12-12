@@ -22,3 +22,112 @@
 .oneProduct ul.breadcrumb li.active {
     color: #2967EC;
 }
+
+.oneCard .price::after {
+    display: none;
+}
+
+.toOrder-2 {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background: #5088FF;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.toOrder-2 a {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toOrder-2 a span {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.toOrder-2 a img {
+    margin-left: 10px;
+}
+
+.counter-product {
+    border: 1px solid #787878;
+}
+
+.info-order img {
+    width: 24px;
+    height: 24px;
+    background: #2967EC;
+    border-radius: 50%;
+}
+
+.info-order div a img {
+    margin-right: 10px;
+}
+
+.info-order div a {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-order div a span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: #363636;
+}
+
+.changeVariants div:last-child span {
+    border: 1px solid #787878;
+}
+
+.oneCard_block {
+    display: flex;
+}
+
+.oneCard_block>div:first-child {
+    width: 50%;
+}
+
+/*swiper*/
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 705px;
+}
+.swiper-slide img {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top  img {
+    width: 100%;
+    height: 500px;
+}
+.gallery-thumbs {
+    height: 150px;
+}
+
+.gallery-thumbs .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    padding-top: 15px;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+    border: none;
+}
+
