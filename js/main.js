@@ -186,11 +186,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     const pageNumber = parseInt(event.target.textContent);
                     showPage(pageNumber);
 
-                    // Удаляем класс актив со всех элементов
                     const paginationItems = pagination.querySelectorAll('a');
                     paginationItems.forEach(item => item.classList.remove('active'));
 
-                    // Добавляем класс актив текущему элементу
                     event.target.classList.add('active');
                 }
             });
@@ -207,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
 
-                // Скрываем/показываем элементы пагинации в зависимости от текущей страницы
                 const paginationItems = pagination.querySelectorAll('li');
                 paginationItems.forEach((item, index) => {
                     if (index < totalPages) {
@@ -222,7 +219,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             pagination.style.display = 'none';
 
-            // Показываем все элементы, так как их меньше, чем itemsPerPage
             for (let i = 0; i < totalItems; i++) {
                 slidesContainer.children[i].style.display = 'block';
             }
