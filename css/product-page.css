@@ -23,18 +23,71 @@
     color: #2967EC;
 }
 
-.oneCard .price::after {
+.oneCard .cardStatus::after, .oneCard .price::after {
     display: none;
 }
 
-.toOrder-2 {
+.oneCard .cardContent {
+    padding: 0;
+}
+.oneCard .cardContent>a>p {
+    margin-bottom: 20px;
+    max-width: 660px;
+}
+
+.oneCard_block>div:last-child {
+    margin-left: 50px;
+}
+
+.oneCard_price {
+    display: flex;
+    align-items: center;
+}
+
+.oneCard_price>div:first-child{
+    margin-right: 25px;
+}
+
+.oneCard .group form {
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
+    min-width: 0;
     width: 100%;
-    height: 60px;
+}
+
+.oneCard .group_title {
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.oneCard .filterDrop.active .accordion-content {
+    position: absolute;
+    background: #FFFFFF;
+    width: 251px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.oneCard .price span {
+    font-size: 40px;
+}
+
+.order-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.toOrder-2 {
+    width: 400px;
+    height: 80px;
     border-radius: 5px;
     background: #5088FF;
     color: white;
     justify-content: center;
     align-items: center;
+    margin-right: 15px;
 }
 
 .toOrder-2 a {
@@ -56,7 +109,28 @@
 }
 
 .counter-product {
-    border: 1px solid #787878;
+    display: flex;
+    align-items: center;
+}
+
+.counter-product div {
+    font-size: 25px;
+    width: 88px;
+    height: 80px;
+    border: 1px solid #D1D1D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-product>div:nth-child(2) {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.counter-product>div:first-child:hover, .counter-product>div:last-child:hover {
+    color: #2967EC;
 }
 
 .info-order img {
@@ -73,7 +147,7 @@
 .info-order div a {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .info-order div a span {
@@ -84,8 +158,42 @@
     color: #363636;
 }
 
-.changeVariants div:last-child span {
-    border: 1px solid #787878;
+.changeVariants {
+    margin: 40px 0 40px 0;
+}
+
+.changeVariants>div:last-child .active {
+    border: 1px solid #2967EC;
+}
+
+.changeVariants>div:first-child {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+.changeVariants>div:last-child div {
+    border: 1px solid #D1D1D1;
+    width: 110px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.changeVariants>div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.changeVariants>div:last-child div:first-child{
+    margin-right: 10px;
 }
 
 .oneCard_block {
@@ -93,7 +201,7 @@
 }
 
 .oneCard_block>div:first-child {
-    width: 50%;
+    /*width: 50%;*/
 }
 
 /*swiper*/

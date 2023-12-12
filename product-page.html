@@ -221,27 +221,68 @@
                                             <span>Оптом і в роздріб</span>
                                         </div>
                                     </div>
-                                    <div class="price price-desktop">
-                                        <span>62</span>
-                                        <span>₴/м</span>
+                                    <div class="oneCard_price">
+                                        <div class="price price-desktop">
+                                            <span>62</span>
+                                            <span>₴/м</span>
+                                        </div>
+                                        <div class="group filterDrop wallThickness">
+                                            <form action="">
+                                                <div class="group_title">Показати оптові ціни
+                                                    <div class="arrow-icon"></div>
+                                                </div>
+                                                <div class="accordion-content">
+                                                    <div>
+                                                        <input type="checkbox" id="price-1" name="price-1" value="price-1">
+                                                        <label for="price-1">
+                                                            <span>62</span>
+                                                            <span>₴/м</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" id="price-2" name="price-2" value="price-2">
+                                                        <label for="price-2">
+                                                            <span>62</span>
+                                                            <span>₴/м</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" id="price-3" name="price-3" value="price-3">
+                                                        <label for="price-3">
+                                                            <span>62</span>
+                                                            <span>₴/м</span>
+                                                        </label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" id="price-4" name="price-4" value="price-4">
+                                                        <label for="price-4">
+                                                            <span>62</span>
+                                                            <span>₴/м</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                     <div class="changeVariants">
                                         <div>Цинкове покриття:</div>
                                         <div>
-                                            <span>140</span>
-                                            <span>275</span>
+                                            <div class="active">140</div>
+                                            <div>275</div>
                                         </div>
                                     </div>
-                                    <button class="toOrder-2">
-                                        <a href="#">
-                                            <span>Замовити</span>
-                                            <img src="images/svg/arrow-left-top.svg" alt="img">
-                                        </a>
-                                    </button>
-                                    <div class="counter-product">
-                                        <span>-</span>
-                                        <span>0</span>
-                                        <span>+</span>
+                                    <div class="order-block">
+                                        <button class="toOrder-2">
+                                            <a href="#">
+                                                <span>Замовити</span>
+                                                <img src="images/svg/arrow-left-top.svg" alt="img">
+                                            </a>
+                                        </button>
+                                        <div class="counter-product">
+                                            <div id="decrement">-</div>
+                                            <div id="counter">0</div>
+                                            <div id="increment">+</div>
+                                        </div>
                                     </div>
                                     <div class="info-order">
                                         <div>
@@ -1107,6 +1148,34 @@
                     document.getElementById("description-tab").click();
                 };
             changeTab();
+
+            const initCounterProduct = () => {
+                const decrementButton = document.getElementById('decrement');
+                const counterElement = document.getElementById('counter');
+                const incrementButton = document.getElementById('increment');
+
+                decrementButton.addEventListener('click', function () {
+                    const currentValue = parseInt(counterElement.textContent);
+                    if (currentValue > 0) {
+                        counterElement.textContent = currentValue - 1;
+                    }
+                });
+
+                incrementButton.addEventListener('click', function () {
+                    const currentValue = parseInt(counterElement.textContent);
+                    counterElement.textContent = currentValue + 1;
+                });
+            };
+            initCounterProduct();
+
+            $(document).ready(function () {
+                $('.changeVariants div div').on('click', function () {
+                    $('.changeVariants div div').removeClass('active');
+
+                    $(this).addClass('active');
+                });
+            });
+
         </script>
         <script src="./js/main.js"></script>
     </body>
