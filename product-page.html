@@ -1111,6 +1111,18 @@
                 freeMode: true,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
+                breakpoints: {
+                    1200: {
+                        spaceBetween: 10,
+                    },
+                    719: {
+                        slidesPerView: 2,
+                    },
+                    340: {
+
+                    },
+
+                },
             });
             const galleryTop = new Swiper('.gallery-top', {
                 spaceBetween: 10,
@@ -1120,7 +1132,7 @@
                 },
                 thumbs: {
                     swiper: galleryThumbs
-                }
+                },
             });
             Fancybox.bind('[data-fancybox="gallery"]', {
                 Thumbs : {
