@@ -1,0 +1,24 @@
+.metalSchemes-product form {
+    padding-bottom: 130px;
+}
+
+.product-page {
+    padding: 130px 0 130px 0;
+    background: #F7F7F7;
+}
+
+.oneProduct ul.breadcrumb li {
+    color: #363636;
+}
+
+.oneProduct ul.breadcrumb li a {
+    color: #363636;
+}
+
+.oneProduct ul.breadcrumb li+li:before {
+    color: #363636;
+}
+
+.oneProduct ul.breadcrumb li.active {
+    color: #2967EC;
+}
