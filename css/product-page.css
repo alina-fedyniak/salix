@@ -19,7 +19,7 @@
     color: #363636;
 }
 
-.oneProduct ul.breadcrumb li.active {
+ul.breadcrumb li.active {
     color: #2967EC;
 }
 
@@ -285,6 +285,10 @@
     opacity: 1;
     border-bottom: 2px solid #2967EC;
     font-weight: 700;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    border: none;
 }
 
 

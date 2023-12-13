@@ -157,7 +157,7 @@
         flex-wrap: wrap;
     }
     .swiper-container {
-        max-width: 550px;
+        max-width: 520px;
     }
     .oneCard_block>div:last-child {
         margin-left: 40px;
@@ -236,6 +236,40 @@
     }
     .tab-content p, .tab-content li {
         font-size: 15px;
+    }
+    .blog-title {
+        font-size: 60px;
+        max-width: 938px;
+        padding-top: 100px;
+    }
+    .weWork_info div span {
+        font-size: 18px;
+    }
+    .weTake_info p {
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 250px;
+    }
+    .weWork_info h3 {
+        font-size: 25px;
+        margin-bottom: 25px;
+        max-width: 450px;
+    }
+    .weWork_info div {
+        margin-bottom: 20px;
+    }
+    .about-table h3 {
+        font-size: 35px;
+        padding: 100px 0 50px 0;
+    }
+    .blog-img {
+        max-height: 700px;
+    }
+    .gallery-top img {
+        height: 400px;
+    }
+    .swiper-container {
+        max-height: 400px;
     }
 
 }
@@ -613,6 +647,145 @@
     .oneCard .group_title {
         font-size: 15px;
     }
+    .blog-title {
+        font-size: 35px;
+        max-width: 497px;
+        padding-top: 50px;
+        line-height: 45px;
+    }
+    .blog-img {
+        max-height: 450px;
+    }
+    .weWork_block-1 .weWork_info h3 {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        max-width: 360px;
+        line-height: 30px;
+    }
+    .weWork_info div span {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .weWork_info div {
+        margin-bottom: 15px;
+    }
+    .weWork_block {
+        margin: 80px 0 80px 0;
+        flex-direction: column;
+    }
+    .about-title h3 {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 81px 0 50px 0;
+    }
+    .weMake_info {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .weMake_info>div>h4 {
+        font-size: 25px;
+    }
+    .weMake_info>div>p {
+        font-size: 20px;
+    }
+    .weMake_info>div>p {
+        margin-bottom: 30px;
+    }
+    .weMake_info {
+        padding-bottom: 80px;
+    }
+    .weTake_info {
+        flex-direction: column;
+    }
+    .weTake_info p {
+        margin-bottom: 20px;
+    }
+    .weTake_block {
+        margin-bottom: 80px;
+    }
+    .weWork_block.weWork_block-2 h3 {
+        margin-top: 0;
+    }
+
+    .weWork_block.weWork_block-2  {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .weWork_block-2 .weWork_info {
+        margin-bottom: 0;
+    }
+    .weTake-grey-block .weTake_info {
+        padding-bottom: 80px;
+    }
+    .weWork_block.weWork_block-3 {
+        align-items: flex-start;
+    }
+    .weWork_block.weWork_block-3 .weWork_info {
+        margin-left: 0;
+    }
+    .table-about-company tr td {
+        min-width: 360px;
+    }
+    .about-table h3 {
+        font-size: 25px;
+        padding: 80px 0 50px 0;
+    }
+    .about-table {
+        padding-bottom: 80px;
+    }
+    .about-slider .product-page {
+        padding: 80px 0 80px 0;
+    }
+    .weWork_block-1-img {
+        width: 100%;
+    }
+    .weWork_block-1 .weWork_info {
+        margin-left: 0;
+    }
+    .weWork_block-2-img,
+    .weWork_block-3-img,
+    .weWork_block-4-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .weWork_info-mobile {
+        display: block;
+    }
+    .weWork_block-2 .weWork_info h3,
+    .weWork_block-3 .weWork_info h3,
+    .weWork_block-4 .weWork_info h3 {
+        text-align: center;
+    }
+    .weWork_block-2 .weWork_info-desktop div {
+        display: none;
+    }
+    .weWork_block-4 .weWork_info-desktop div {
+        display: none;
+    }
+    .weWork_block-3 .weWork_info-desktop h3 {
+        display: none;
+    }
+    .weWork_block-2 .weWork_info-mobile {
+        display: block;
+    }
+    .weTake_block.weTake_block-last.about-title h3 {
+        padding: 0 0 50px 0;
+    }
+    .oneCard_block {
+        flex-direction: column;
+    }
+    .gallery-thumbs {
+        height: 120px;
+    }
+    .swiper-container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .oneCard_block>div:last-child {
+        margin-top: 30px;
+    }
 
 
 }
@@ -854,6 +1027,9 @@
     }
     .tab-content {
         padding-top: 20px;
+    }
+    .oneCard_block>div:last-child {
+        margin-top: 0;
     }
 
 }
