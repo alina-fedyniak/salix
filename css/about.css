@@ -27,6 +27,7 @@
 .weWork_block {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 130px 0 80px 0;
 }
 
@@ -175,4 +176,14 @@
 
 .about-table {
     background: #F7F7F7;
+}
+
+.weWork_block-2 .weWork_info {
+    margin-left: 0;
+    margin-right: 42px;
+}
+
+.weWork_block-4 .weWork_info {
+    margin-left: 0;
+    margin-right: 42px;
 }
