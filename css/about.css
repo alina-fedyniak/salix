@@ -176,6 +176,7 @@
 
 .about-table {
     background: #F7F7F7;
+    padding-bottom: 130px;
 }
 
 .weWork_block-2 .weWork_info {
@@ -186,4 +187,64 @@
 .weWork_block-4 .weWork_info {
     margin-left: 0;
     margin-right: 42px;
+}
+
+.about-table h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px; /* 87.5% */
+    text-transform: uppercase;
+    padding: 130px 0 60px 0;
+    text-align: center;
+}
+
+.about-table h3 span {
+    color: #2967EC;
+}
+
+.table-about-company {
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.table-about-company td {
+    padding: 3px 31px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.table-about-company th {
+    border-top: 1px solid #bfc3c8;
+    border-bottom: 1px solid #bfc3c8;
+}
+
+.table-about-company th:first-child {
+    border-right: none;
+}
+
+.table-about-company tr td {
+    width: 50%;
+}
+
+.table-about-company tr th {
+    background: #D1D1D1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 3px 0;
+}
+
+.table-about-company tr:first-child th:first-child {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.table-about-company tr:last-child td:first-child {
+    border-bottom-left-radius: 60px;
+}
+
+.table-about-company tr:last-child td:last-child {
+    border-bottom-right-radius: 60px;
 }
